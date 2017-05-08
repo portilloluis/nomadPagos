@@ -1,0 +1,101 @@
+/*******GENERALES*******/
+
+html
+{
+    font-size: 14px;
+}
+
+main#principal input,
+main#principal select
+{
+    border: 1px solid #C59614;
+    padding:.3rem .5rem;
+    width: 100%;
+}
+
+main#principal button.botonDorado,
+main#principal input[type="submit"]
+{
+    background: #C59614;
+    font-weight: bold;
+    font-size: 1rem;
+    color:white;
+    margin:1.4rem 0;
+    padding:1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition:all .5s ease;
+}
+
+main#principal buttonbotonDorado:hover,
+main#principal input[type="submit"]:hover
+{
+    background: #A87E14
+}
+
+main#principal label
+{
+    display: block;
+}
+
+main#principal h1,
+main#principal h2,
+main#principal h3,
+main#principal h4
+{
+    margin:0;
+    padding:0;
+}
+
+main#principal h3
+{
+    margin-bottom:1.4rem;
+    text-transform: none;
+}
+
+main#principal hgroup.titulosGenerales
+{
+    margin-top: 1.4rem;
+}
+
+    main#principal hgroup.titulosGenerales h1
+    {
+        color: #313035;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    main#principal hgroup.titulosGenerales h2
+    {
+        color:#C59614;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+main#principal hr
+{
+    margin:1.4rem 0;
+}
+
+main#principal .row.formElement div[class^="col-"]
+{
+    margin-bottom:1rem;
+}
+
+@media screen and (min-width:768px)
+{
+
+    html
+    {
+        font-size: 18px;
+    }
+
+    main#principal button.botonDorado,
+    main#principal input[type="submit"]
+
+    {
+        width: 25%;
+        float: right;
+    }
+}
+
