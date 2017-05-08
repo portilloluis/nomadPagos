@@ -115,60 +115,89 @@
     </nav>
 
     <main class="container" id="principal">
-        <div class="row">
-            <hgroup class="titulosGenerales col-xs-12">
-                <h1>Solicitar más información</h1>
-                <h2>Rivera Maya</h2>
-            </hgroup>
-        </div>
-        <hr>
-        <form action="">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h3>Datos de contacto</h3>
-                </div>
-            </div>
-            <div class="row formElement">
-                <div class="col-sm-6">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">
-                </div>
-                <div class="col-sm-6">
-                    <label for="nombre">Apellidos</label>
-                    <input type="text" name="apellidos">
-                </div>
-            </div>
-             <div class="row formElement">
-                 <div class="col-sm-4">
-                    <label for="fechaNacimiento">Fecha de nacimiento</label>
-                    <input type="text" name="fechaNacimiento">
-                 </div>
-                 <div class="col-sm-4">
-                    <label for="correo">Correo</label>
-                    <input type="text" name="correo">
-                 </div>
-                 <div class="col-sm-4">
-                    <label for="celular">Celular</label>
-                    <input type="text" name="celular">
-                 </div>
-             </div>
-             <div class="row formElement">
-                 <div class="col-sm-4">
-                     <label for="pais">Pais</label>
-                     <select name="pais" id="">
-                         <option value="">-- Selecciona una opción --</option>
-                         <option value="">Opción 1</option>
-                         <option value="">Opción 2</option>
-                     </select>
-                 </div>
-             </div>
-             <div class="row formElement">
-                <div class="col-xs-12">
-                    <input type="submit" value="Enviar">
-                </div>
-             </div>
-        </form>
 
+       <!--/***PASOS***/-->
+        <div class="row" id="pasos">
+            <div class="col-xs-12">
+                <ul>
+                    <li class="active">
+                        <span class="icon-reserva"></span>
+                    </li>
+                    <li>
+                        <span class="icon-pago"></span>
+                    </li>
+                    <li>
+                        <span class="icon-gracias"></span>
+                    </li>
+                </ul>
+            </div>
+	    </div>
+        <!--/***END - PASOS***/-->
+
+        <!--/***RESERVA TU LUGAR***/
+        <section id="reserva">
+            <div class="row">
+                <hgroup class="titulosGenerales col-xs-12">
+                    <h1>Reserva tu lugar</h1>
+                    <h2>Rivera Maya</h2>
+                </hgroup>
+            </div>
+            <hr>
+            <form action="">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Datos de contacto</h3>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!--/***END - RESERVA TU LUGAR***/-->
+
+        <!--/***PAGO***/-->
+        <section id="pago">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <hgroup class="titulosGenerales col-xs-12">
+                            <h1>Pago</h1>
+                        </hgroup>
+                    </div>
+                    <hr>
+
+                    <ul class="nav nav-tabs">
+                         <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                         <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                         <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                         <div id="home" class="tab-pane fade in active">
+                            <h3>HOME</h3>
+                            <p>Some content.</p>
+                         </div>
+                             <div id="menu1" class="tab-pane fade">
+                             <h3>Menu 1</h3>
+                         <p>Some content in menu 1.</p>
+                         </div>
+                         <div id="menu2" class="tab-pane fade">
+                             <h3>Menu 2</h3>
+                             <p>Some content in menu 2.</p>
+                         </div>
+                    </div>
+
+                    <div class="row">
+                        <hgroup class="titulosGenerales col-xs-12">
+                            <h1>Forma de pago</h1>
+                        </hgroup>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+        </section>
+        <!--/***END - PAGO***/-->
 
     </main>
 
