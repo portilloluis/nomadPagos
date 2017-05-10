@@ -45,13 +45,14 @@ html {
 	font-size: 14px;
 }
 
-<<<<<<< HEAD
+
 main#principal input,
 main#principal select {
 	border: 1px solid #C59614;
 	padding: .3rem .5rem;
 	width: 100%;
-=======
+}
+
 main#principal input[type="text"],
 main#principal input[type="number"],
 main#principal input[type="email"],
@@ -60,7 +61,6 @@ main#principal select
     border: 1px solid #C59614;
     padding:.3rem .5rem;
     width: 100%;
->>>>>>> origin/master
 }
 
 main#principal input[type="radio"],
@@ -107,7 +107,6 @@ main#principal h3 {
 	text-transform: none;
 }
 
-<<<<<<< HEAD
 main#principal hgroup.titulosGenerales {
 	margin-top: 1.4rem;
 }
@@ -117,14 +116,12 @@ main#principal hgroup.titulosGenerales h1 {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
-=======
     main#principal hgroup.titulosGenerales h1
     {
         color: #313035;
         font-size: 2rem;
         text-transform: uppercase;
     }
->>>>>>> origin/master
 
 main#principal hgroup.titulosGenerales h2 {
 	color: #C59614;
@@ -132,7 +129,6 @@ main#principal hgroup.titulosGenerales h2 {
 	text-transform: uppercase;
 }
 
-<<<<<<< HEAD
 main#principal hr {
 	margin: 1.4rem 0;
 }
@@ -141,8 +137,6 @@ main#principal .row.formElement div[class^="col-"] {
 	margin-bottom: 1rem;
 }
 
-
-=======
 main#principal .info
 {
     background-color: #C59614;
@@ -167,8 +161,6 @@ main#principal hr
 {
     margin:1.4rem 0;
 }
-
-
 
 main#principal .row.formElement div[class^="col-"]
 {
@@ -297,16 +289,6 @@ main#principal .row.formElement div[class^="col-"].radioLine
         width: 1.8rem;
     }
 
-<<<<<<< HEAD
-/****MODAL****/
-#ModalBody {
-	padding: 15px;
-}
-
-#ModalBody h1 {
-	margin: 0;
-}
-=======
     #pago .tipoDePago label
     {
         font-family: 'Montserrat', sans-serif;
@@ -456,24 +438,28 @@ main#principal .row.formElement div[class^="col-"].radioLine
 }
 
 /****END - DETALLE RESERVA****/
-@media screen and (min-width:768px)
-{
->>>>>>> origin/master
 
-#ModalBody h4 {
-	margin: 0px;
-	color: #c59614;
-	font-size: 16px;
-	letter-spacing: 2px;
+/****MODAL****/
+#ModalBody {
+	padding: 15px;
 }
 
-<<<<<<< HEAD
-#ModalBody hr {
-	width: 100%;
-	color: #313035;
-	border: solid 1px;
+#ModalBody h1 {
+	margin: 0;
 }
-=======
+/****END MODAL****/
+
+@media screen and (min-width:768px) {
+	/*******GENERALES*******/
+	html {
+		font-size: 18px;
+	}
+	main#principal button.botonDorado,
+	main#principal input[type="submit"] {
+		width: 25%;
+		float: right;
+	}
+
     main#principal button.botonDorado,
     main#principal input[type="submit"]
     {
@@ -487,30 +473,34 @@ main#principal .row.formElement div[class^="col-"].radioLine
         width: 100%;
     }
     /*******END - GENERALES*******/
->>>>>>> origin/master
 
-#ModalBody h5 {
-	color: #000;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-/***END MODAL****/
-
-@media screen and (min-width:768px) {
-	/*******GENERALES*******/
-	html {
-		font-size: 18px;
-	}
-	main#principal button.botonDorado,
-	main#principal input[type="submit"] {
-		width: 25%;
-		float: right;
-	}
-	/*******END - GENERALES*******/
 	/***PASOS****/
 	#pasos {
 		margin-top: 7rem;
 	}
 	/***END PASOS****/
+
+    /****MODAL****/
+
+    #ModalBody h4 {
+        margin: 0px;
+        color: #c59614;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    #ModalBody hr {
+        width: 100%;
+        color: #313035;
+        border: solid 1px;
+    }
+
+    #ModalBody h5 {
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    /***END MODAL****/
+
 }
