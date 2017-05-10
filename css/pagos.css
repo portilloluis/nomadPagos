@@ -45,14 +45,6 @@ html {
 	font-size: 14px;
 }
 
-
-main#principal input,
-main#principal select {
-	border: 1px solid #C59614;
-	padding: .3rem .5rem;
-	width: 100%;
-}
-
 main#principal input[type="text"],
 main#principal input[type="number"],
 main#principal input[type="email"],
