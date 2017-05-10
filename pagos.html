@@ -120,10 +120,10 @@
         <div class="row" id="pasos">
             <div class="col-xs-12">
                 <ul>
-                    <li class="active">
+                    <li>
                         <span class="icon-reserva"></span>
                     </li>
-                    <li>
+                    <li class="active">
                         <span class="icon-pago"></span>
                     </li>
                     <li>
@@ -133,25 +133,6 @@
             </div>
 	    </div>
         <!--/***END - PASOS***/-->
-
-        <!--/***RESERVA TU LUGAR***/
-        <section id="reserva">
-            <div class="row">
-                <hgroup class="titulosGenerales col-xs-12">
-                    <h1>Reserva tu lugar</h1>
-                    <h2>Rivera Maya</h2>
-                </hgroup>
-            </div>
-            <hr>
-            <form action="">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h3>Datos de contacto</h3>
-                    </div>
-                </div>
-            </form>
-        </section>
-        <!--/***END - RESERVA TU LUGAR***/-->
 
         <!--/***PAGO***/-->
         <section id="pago">
@@ -163,26 +144,24 @@
                         </hgroup>
                     </div>
                     <hr>
-
-                    <ul class="nav nav-tabs">
-                         <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                         <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-                         <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-                    </ul>
-
-                    <div class="tab-content">
-                         <div id="home" class="tab-pane fade in active">
-                            <h3>HOME</h3>
-                            <p>Some content.</p>
-                         </div>
-                             <div id="menu1" class="tab-pane fade">
-                             <h3>Menu 1</h3>
-                         <p>Some content in menu 1.</p>
-                         </div>
-                         <div id="menu2" class="tab-pane fade">
-                             <h3>Menu 2</h3>
-                             <p>Some content in menu 2.</p>
-                         </div>
+                    <div class="row tipoDePago">
+                        <div class="col-xs-6">
+                            <h3>Anticipo</h3>
+                            <p class="monto">$3,000 <small>mxn</small></p>
+                            <div class="radioElige">
+                                <input type="radio" name="eligePago" checked>
+                                <label for="eligePago">Elige este tipo de pago</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <h3>Monto total</h3>
+                            <p class="monto">$3,000 <small>mxn</small></p>
+                            <div class="radioElige">
+                                <input type="radio" name="eligePago">
+                                <label for="eligePago">Elige este tipo de pago</label>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dignissimos ullam modi, molestiae. Commodi aut inventore facere laudantium totam quam neque.</p>
+                        </div>
                     </div>
 
                     <div class="row">
@@ -191,9 +170,224 @@
                         </hgroup>
                     </div>
                     <hr>
+                    <ul class="nav nav-tabs tabsFormaDePago">
+                         <li class="active"><a data-toggle="tab" href="#pagoTarjeta">Tarjeta</a></li>
+                         <li><a data-toggle="tab" href="#otrasPago">Otras formas</a></li>
+                         <li><a data-toggle="tab" href="#bancoPago">Banca en línea</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                         <div id="pagoTarjeta" class="tab-pane fade in active">
+                            <div class="row formElement">
+                                <div class="col-md-12">
+                                   <label for="tarjeta">Tarjeta</label>
+                                    <select name="" id="">
+                                        <option value="">-- Selecciona una tarjeta --</option>
+                                        <option value="">Opción 1</option>
+                                        <option value="">Opción 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row formElement">
+                                <div class="col-md-6">
+                                   <label for="titularTarjeta">Titular de la tarjeta</label>
+                                    <input type="text" name="titularTarjeta">
+                                </div>
+                                <div class="col-md-6">
+                                   <label for="numeroTarjeta">Número de la tarjeta</label>
+                                    <input type="text" name="numeroTarjeta">
+                                </div>
+                            </div>
+                            <div class="row formElement">
+                                <div class="col-xs-6 col-md-4">
+                                   <label for="vencimientoTarjeta">Vencimiento</label>
+                                   <div class="multipleLine">
+                                       <select name="" id="">
+                                            <option value="">Mes</option>
+                                            <option value="">Opción 1</option>
+                                            <option value="">Opción 2</option>
+                                        </select>
+                                        <select name="" id="">
+                                            <option value="">Año</option>
+                                            <option value="">Opción 1</option>
+                                            <option value="">Opción 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-5 col-md-4">
+                                    <label for="codigoSeguridad">Código de seguridad</label>
+                                    <div class="multipleLine">
+                                        <input type="text" name="codigoSeguridad">
+                                        <div class="info"><span>?</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row formElement">
+                                <div class="col-xs-12 radioLine">
+                                    <input type="radio" name="codigoSeguridad">
+                                    <label for="codigoSeguridad">Necesito factura fiscal</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Datos para la emisión de factura</h3>
+                                </div>
+                            </div>
+                            <div class="row formElement">
+                                <div class="col-md-12">
+                                   <label for="nombreFactura">Nombre o razón social</label>
+                                   <input type="text" name="nombreFactura">
+                                </div>
+                            </div>
+                            <div class="row formElement">
+                                <div class="col-md-12">
+                                   <label for="rfcFactura">RFC</label>
+                                   <input type="text" name="nombreFactura">
+                                </div>
+                            </div>
+                            <div class="row formElement">
+                                <div class="col-xs-8">
+                                   <label for="rfcFactura">Calle</label>
+                                   <input type="text" name="calleFactura">
+                                </div>
+                                <div class="col-xs-4">
+                                   <label for="numero">Número</label>
+                                   <div class="multipleLine">
+                                       <input type="text" placeholder="Ext.">
+                                       <input type="text" placeholder="Int.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row formElement">
+                                <div class="col-md-5">
+                                   <label for="coloniaFactura">Colonia</label>
+                                   <input type="text" name="coloniaFactura">
+                                </div>
+                                <div class="col-md-5">
+                                   <label for="delegacionFactura">Delegación o municipio</label>
+                                   <input type="text" name="delegacionFactura">
+                                </div>
+                                <div class="col-md-2">
+                                   <label for="cpFactura">C.P.</label>
+                                   <input type="text" name="cpFactura">
+                                </div>
+                            </div>
+                            <div class="row formElement">
+                                <div class="col-md-6">
+                                    <label for="estadoFactura">Estado</label>
+                                    <input type="text" name="estadoFactura">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="estadoFactura">Correo electrónico</label>
+                                    <input type="text" name="correoFactura">
+                                </div>
+                            </div>
+                            <div class="row formElement formContinuar">
+                                <div class="col-md-6 radioLine">
+                                    <input type="checkbox" name="aceptoTerminos">
+                                    <label for="aceptoTerminos">Acepto<span> términos y condiciones</span></label>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <button class="botonDorado completo">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                         </div>
+
+                         <div id="otrasPago" class="tab-pane fade">
+                            <div class="row formElement filaLogos">
+                                <img class="active" src="img/logo-k.svg" alt="Pago de servicio con K">
+                                <img src="img/logo-extra.svg" alt="Pago de servicio con Extra">
+                                <img src="img/logo-farmaciasDelAhorro.svg" alt="Pago de servicio con Farmacias de ahorro">
+                                <img src="img/logo-farmaciasBenavides.svg" alt="Pago de servicio con Farmacias Benavides">
+                                <img src="img/logo-sevenEleven.svg" alt="Pago de servicio con Seven Eleven">
+                            </div>
+                            <div class="row formElement formContinuar">
+                                <div class="col-md-6 radioLine">
+                                    <input type="checkbox" name="aceptoTerminos">
+                                    <label for="aceptoTerminos">Acepto<span> términos y condiciones</span></label>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <button class="botonDorado completo">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                         </div>
+                         <div id="bancoPago" class="tab-pane fade">
+                             <div class="row formElement filaLogos">
+                                <img class="active" src="img/logoBanco_citibanamex.svg" alt="Pago de servicio Citibanamex">
+                                <img src="img/logoBanco_bancoAzteca.svg" alt="Pago de servicio Banco Azteca">
+                                <img src="img/logoBanco_banorte.svg" alt="Pago de servicio Banorte">
+                                <img src="img/logoBanco_inbursa.svg" alt="Pago de servicio Banco Inbursa">
+                                <img src="img/logoBanco_ixe.svg" alt="Pago de servicio IXE">
+                                <img src="img/logoBanco_hsbc.svg" alt="Pago de servicio HSBC">
+                                <img src="img/logoBanco_santander.svg" alt="Pago de servicio Santander">
+                                <img src="img/logoBanco_scotiabank.svg" alt="Pago de servicio Scotiabank">
+                                <img src="img/logoBanco_bbva.svg" alt="Pago de servicio BBVA">
+                            </div>
+                            <div class="row formElement formContinuar">
+                                <div class="col-md-6 radioLine">
+                                    <input type="checkbox" name="aceptoTerminos">
+                                    <label for="aceptoTerminos">Acepto<span> términos y condiciones</span></label>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <button class="botonDorado completo">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
+                    <aside id="detalleReserva">
+                        <div class="row">
+                            <div class="col-xs-12 tituloDetalle">
+                                <h3>Detalle de reserva</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 precios">
+                                <p>Tarifa<br>individual</p>
+                                <p>$13,600.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 precios">
+                                <p>Pasajeros</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 precios preciosTotal">
+                                <p>Total</p>
+                                <p>$26,720.00</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 incluye">
+                                <h4>Incluye</h4>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                </ul>
+                            </div>
+                        </div>
 
+                    </aside>
                 </div>
             </div>
         </section>
@@ -268,5 +462,7 @@
     <script type='text/javascript' src='http://nomadrepublic.org/wp-content/themes/nomad/js/ui-bootstrap-tpls-2.0.0.js?ver=2.0.0'></script>
     <script type='text/javascript' src='http://nomadrepublic.org/wp-content/themes/nomad/js/1cf57c44a1.js?ver=4.7.2'></script>
     <script type='text/javascript' src='http://nomadrepublic.org/wp-content/themes/nomad/js/wow.js?ver=1.0'></script>
+
+    <script src="js/pagos.js"></script>
 </body>
 </html>

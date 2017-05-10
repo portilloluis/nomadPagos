@@ -45,12 +45,31 @@ html {
 	font-size: 14px;
 }
 
+<<<<<<< HEAD
 main#principal input,
 main#principal select {
 	border: 1px solid #C59614;
 	padding: .3rem .5rem;
 	width: 100%;
+=======
+main#principal input[type="text"],
+main#principal input[type="number"],
+main#principal input[type="email"],
+main#principal select
+{
+    border: 1px solid #C59614;
+    padding:.3rem .5rem;
+    width: 100%;
+>>>>>>> origin/master
 }
+
+main#principal input[type="radio"],
+main#principal input[type="checkbox"]
+
+{
+    margin-right: 8px;
+}
+
 
 main#principal button.botonDorado,
 main#principal input[type="submit"] {
@@ -88,6 +107,7 @@ main#principal h3 {
 	text-transform: none;
 }
 
+<<<<<<< HEAD
 main#principal hgroup.titulosGenerales {
 	margin-top: 1.4rem;
 }
@@ -97,6 +117,14 @@ main#principal hgroup.titulosGenerales h1 {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
+=======
+    main#principal hgroup.titulosGenerales h1
+    {
+        color: #313035;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+>>>>>>> origin/master
 
 main#principal hgroup.titulosGenerales h2 {
 	color: #C59614;
@@ -104,6 +132,7 @@ main#principal hgroup.titulosGenerales h2 {
 	text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 main#principal hr {
 	margin: 1.4rem 0;
 }
@@ -113,6 +142,71 @@ main#principal .row.formElement div[class^="col-"] {
 }
 
 
+=======
+main#principal .info
+{
+    background-color: #C59614;
+    cursor: pointer;
+    padding:10px;
+    position:relative;
+    border-radius: 50%;
+    margin-bottom:5px;
+}
+
+    main#principal .info span
+    {
+        color:white;
+
+        position: absolute;
+        font-weight: bold;
+        top:0;
+        left:35%;
+    }
+
+main#principal hr
+{
+    margin:1.4rem 0;
+}
+
+
+
+main#principal .row.formElement div[class^="col-"]
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:1rem;
+}
+
+main#principal .row.formElement div[class^="col-"] input
+{
+    align-self: baseline;
+}
+
+main#principal .multipleLine
+{
+    align-items: flex-end;
+    display: flex;
+}
+
+main#principal .multipleLine input,
+main#principal .multipleLine select
+{
+    margin-right: 10px;
+    flex-grow: 1;
+    width: 45%;
+}
+
+main#principal .multipleLine input:last-child,
+main#principal .multipleLine select:last-child
+{
+    margin-right: 0;
+}
+
+main#principal .row.formElement div[class^="col-"].radioLine
+{
+    flex-direction: row;
+}
+>>>>>>> origin/master
 /*******END GENERALES*******/
 
 
@@ -159,7 +253,51 @@ main#principal .row.formElement div[class^="col-"] {
 
 /***END PASOS****/
 
+/***PAGOS***/
 
+#pago .filaLogos
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    #pago .filaLogos img
+    {
+        cursor: pointer;
+        margin:10px 40px;
+        filter: grayscale(100%);
+        transition: all .5s ease;
+    }
+
+    #pago .filaLogos img:hover,
+    #pago .filaLogos img.active
+    {
+        filter: grayscale(0);
+    }
+
+#pago .formContinuar
+{
+    margin-top:20px;
+}
+
+#pago .tipoDePago
+{
+    margin-bottom:2rem;
+}
+
+    #pago .tipoDePago h3
+    {
+        text-transform: uppercase;
+    }
+
+    #pago .tipoDePago input[type="radio"]
+    {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+
+<<<<<<< HEAD
 /****MODAL****/
 #ModalBody {
 	padding: 15px;
@@ -168,6 +306,159 @@ main#principal .row.formElement div[class^="col-"] {
 #ModalBody h1 {
 	margin: 0;
 }
+=======
+    #pago .tipoDePago label
+    {
+        font-family: 'Montserrat', sans-serif;
+        display: inline;
+        margin-bottom:0;
+    }
+
+    #pago .tipoDePago .col-xs-6 p
+    {
+        margin-top:1rem;
+    }
+
+    #pago .tipoDePago .col-xs-6:last-child
+    {
+        border-left: 1px solid #313035
+    }
+
+    #pago .tipoDePago .radioElige
+    {
+        display: flex;
+        align-items: center;
+    }
+
+#pago .monto
+{
+    color:#C59614;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+    #pago .monto small
+    {
+        text-transform: uppercase;
+        font-size: 1.2rem
+    }
+
+#pago .tabsFormaDePago
+{
+    border-bottom:none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:2rem;
+}
+
+    #pago .tabsFormaDePago li
+    {
+        border:0;
+        border-radius:0;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+        #pago .tabsFormaDePago>li>a
+        {
+            background: #313035;
+            border:0;
+            border-radius: 0;
+            color:white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            padding:0;
+            padding-bottom:.1rem;
+            padding-top:.1rem;
+        }
+
+        #pago .tabsFormaDePago>li>a:hover
+        {
+            background: #C59614;
+            border:none;
+        }
+
+            #pago .tabsFormaDePago>li.active>a,
+            #pago tabsFormaDePago>li.active>a:focus,
+            #pago .tabsFormaDePago>li.active>a:hover
+            {
+                border: none;
+                border-radius: 0;
+                background: #C59614;
+            }
+
+/***END - PAGOS***/
+
+/****DETALLE RESERVA****/
+
+#detalleReserva .tituloDetalle h3
+{
+    background: #CCCCCC;
+    color:#C59614;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom:0;
+    padding:.8rem;
+    text-transform: uppercase;
+}
+
+#detalleReserva .precios
+{
+    display: flex;
+    justify-content: space-between;
+}
+    #detalleReserva .precios p
+    {
+        background: #CCCCCC;
+        font-weight: bold;
+        font-size: 1rem;
+        margin:0;
+        padding:.6rem 1rem;
+        text-transform: uppercase;
+        flex-grow: 1;
+        line-height: 1;
+    }
+
+    #detalleReserva .precios p:last-child
+    {
+        text-align: right;
+    }
+
+    #detalleReserva .precios.preciosTotal p
+    {
+        background: #C59614;
+        font-size: 1.2rem;
+        padding:1rem;
+        text-transform: none;
+    }
+
+#detalleReserva .incluye h4
+{
+    border:1px solid #C59614;
+    border-bottom:0;
+    color:#C59614;
+    padding:1.2rem 1rem;
+}
+
+#detalleReserva .incluye ul
+{
+    list-style-position: inside;
+    padding:.8rem 1rem;
+    width: 100%;
+    border:1px solid #C59614;
+    border-top:0;
+}
+
+#detalleReserva .incluye li
+{
+    margin-bottom:.7rem;
+}
+
+/****END - DETALLE RESERVA****/
+@media screen and (min-width:768px)
+{
+>>>>>>> origin/master
 
 #ModalBody h4 {
 	margin: 0px;
@@ -176,11 +467,27 @@ main#principal .row.formElement div[class^="col-"] {
 	letter-spacing: 2px;
 }
 
+<<<<<<< HEAD
 #ModalBody hr {
 	width: 100%;
 	color: #313035;
 	border: solid 1px;
 }
+=======
+    main#principal button.botonDorado,
+    main#principal input[type="submit"]
+    {
+        width: 25%;
+        float: right;
+    }
+
+    main#principal button.botonDorado.completo,
+    main#principal input[type="submit"].completo
+    {
+        width: 100%;
+    }
+    /*******END - GENERALES*******/
+>>>>>>> origin/master
 
 #ModalBody h5 {
 	color: #000;
