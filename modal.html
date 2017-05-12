@@ -119,16 +119,16 @@
 	</nav>
 
 	<!-- MODAL FORM -->
-	<section class="container">
+	<main class="container" id="principal">
 		<div>
 			<!-- BOTÓN MODAL INFORMACIÓN -->
-			<button type="button" class="btn btn-nomad btn-lg" data-toggle="modal" data-target="#Modal">
+			<button type="button" class="btn btn-nomad btn-lg" data-toggle="modal" data-target="#ModalInfo">
   					MÁS INFORMACIÓN
 			</button>
 			<!-- BOTÓN MODAL INFORMACIÓN -->
 
 			<!-- MODAL -->
-			<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="H1Modal" aria-hidden="true">
+			<div class="modal fade" id="ModalInfo" tabindex="-1" role="dialog" aria-labelledby="H1Modal" aria-hidden="true">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 
@@ -142,7 +142,7 @@
 								<hr>
 							</hgroup>
 
-							<div class="row" id="ModalForm">
+							<div class="row ModalForm formElement">
 								<h5>Datos del contacto</h5>
 								<div class="col-md-6">
 									<label for="nombreContacto">Nombre</label>
@@ -166,7 +166,7 @@
 								</div>
 							</div>
 							<hr>
-							<div class="row" id="ModalForm">
+							<div class="row ModalForm formElement">
 								<h5>País</h5>
 								<div class="col-md-6">
 									<label for="mexicoContacto">México</label>
@@ -179,15 +179,19 @@
 								<p>Encuentra tu C.P.</p>
 							</div>
 							<hr>
-							<div class="row" id="ModalForm">
+							<div class="row ModalForm formElement">
 								<h5>Datos del programa</h5>
 								<div class="col-md-6">
 									<label for="fechaContacto">Fecha de salida</label>
+									<span><i class="fa fa-calendar-o"></i></span>
+									<input type="date"/>
+									<!--***
 									<select name="" id="">
                                         <option value="">-- Selecciona una fecha --</option>
                                         <option value="">Opción 1</option>
                                         <option value="">Opción 2</option>
                                     </select>
+                                    --->
 								</div>
 								<div class="col-md-6">
 									<label for="duracionContacto">Duración</label>
@@ -200,23 +204,23 @@
 							</div>
 							<hr>
 							<div class="row">
-								<div class="col-md-4 radioElige" id="ModalForm">
+								<div class="col-md-4 radioElige" >
 									<input type="radio" name="eligeWhatsapp" checked="">
 									<label for="eligeWhatsapp">Whatsapp</label>
 								</div>
-								<div class="col-md-4 radioElige" id="ModalForm">
+								<div class="col-md-4 radioElige">
 									<input type="radio" name="eligeLlamada" checked="">
 									<label for="eligeLlamada">Lamada</label>
 								</div>
-								<div class="col-md-4 radioElige" id="ModalForm">
+								<div class="col-md-4 radioElige">
 									<input type="radio" name="eligeCorreo" checked="">
 									<label for="eligeCorreo">Correo</label>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-6 col-md-offset-6">
                                     <button class="botonDorado completo">
-                                        Comprar
+                                        ENVIAR
                                     </button>
                                 </div>
 							</div>
@@ -227,7 +231,7 @@
 			</div>
 			<!-- MODAL -->
 		</div>
-	</section>
+	</main>
 	<!-- END MODAL FORM -->
 
 	<footer class="schatten-in">
