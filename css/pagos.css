@@ -56,7 +56,7 @@ main#principal select {
 
 main#principal input[type="radio"],
 main#principal input[type="checkbox"] {
-	margin:0;
+	margin: 0;
 	margin-right: 8px;
 }
 
@@ -433,7 +433,7 @@ main#principal .row.formElement div[class^="col-"].radioLine {
 	text-transform: uppercase;
 }
 
-#ModalBody .fa.fa-calendar-o{
+#ModalBody .fa.fa-calendar-o {
 	position: absolute;
 	left: 25px;
 	top: 35px;
@@ -444,7 +444,8 @@ main#principal .row.formElement div[class^="col-"].radioLine {
 	margin-bottom: 30px;
 }
 
-.ModalForm input, select {
+.ModalForm input,
+select {
 	border: 1px solid #C59614;
 	padding: .3rem .5rem;
 	width: 100%;
@@ -468,11 +469,116 @@ main#principal .radioElige input[type="radio"] {
 }
 
 .radioElige {
-		display: flex;
+	display: flex;
 	align-items: center;
 }
 
+
 /****END MODAL****/
+
+
+/****THANK YOU****/
+
+.texto-gracias {
+	margin-top: 30px;
+}
+
+.texto-gracias h2 {
+	margin: 0;
+	color: #c59614;
+	font-size: 40px;
+}
+
+.back-thankyou {
+	background-image: url('../img/back-thankyou.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-attachment: fixed;
+	padding-bottom: 60px;
+	margin-top: 80px;
+}
+
+.texto-thankyou {
+	margin-top: 30px;
+}
+
+.texto-thankyou p {
+	margin: 0;
+	font-size: 1rem;
+	color: #313035;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+
+#confirmacion {
+	margin: 0;
+	margin-top: -25px;
+	margin-bottom: -25px;
+	font-size: 1rem;
+	font-weight: 900;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+#hr-top {
+	margin-bottom: -10px;
+}
+
+#hr-down {
+	margin-top: 0px;
+}
+
+#boton-fb {
+	transition: .5s;
+}
+
+.texto-facebook p {
+	margin: 0;
+	font-size: 1rem;
+	color: #313035;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.texto-facebook label {
+		margin: 0;
+	margin-bottom: 5px;
+	font-size: 1rem;
+	color: #313035;
+	font-weight: 700;
+}
+
+.texto-facebook input {
+	margin: 0;
+	font-size: .8rem;
+	color: #c59614;
+	font-style: italic;
+}
+
+.texto-gracias h2:before,
+.general h2:before,
+.general h1:before {
+	content: url(../img/left.png);
+	left: 160px;
+	position: absolute;
+	top: -30px;
+}
+
+.texto-gracias h2:after,
+.general h2:after,
+.general h1:after {
+	content: url(../img/right.png);
+	position: absolute;
+	right: 160px;
+	top: -30px;
+}
+
+
+
+
+/****THANK YOU****/
 
 @media screen and (min-width:768px) {
 	/*******GENERALES*******/
@@ -499,4 +605,7 @@ main#principal .radioElige input[type="radio"] {
 		margin-top: 7rem;
 	}
 	/***END PASOS****/
+	/***THANK YOU***/
+
+	/***THNAK YOU***/
 }
