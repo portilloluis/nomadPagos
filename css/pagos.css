@@ -178,7 +178,6 @@ main#principal .row.formElement div[class^="col-"].radioLine {
 	flex-direction: row;
 }
 
->>>>>>>origin/master
 /*******END GENERALES*******/
 
 
@@ -479,14 +478,15 @@ main#principal .radioElige input[type="radio"] {
 
 /****THANK YOU****/
 
-.texto-gracias {
+/*.texto-gracias {
 	margin-top: 30px;
-}
+}*/
 
-.texto-gracias h2 {
+main#principal .texto-gracias h2 {
 	margin: 0;
 	color: #c59614;
 	font-size: 40px;
+	margin-bottom:3rem;
 }
 
 .back-thankyou {
@@ -500,7 +500,7 @@ main#principal .radioElige input[type="radio"] {
 }
 
 .texto-thankyou {
-	margin-top: 30px;
+	margin-bottom:3rem;
 }
 
 .texto-thankyou p {
@@ -564,6 +564,7 @@ main#principal .radioElige input[type="radio"] {
 	left: 160px;
 	position: absolute;
 	top: -30px;
+	display: none;
 }
 
 .texto-gracias h2:after,
@@ -573,10 +574,8 @@ main#principal .radioElige input[type="radio"] {
 	position: absolute;
 	right: 160px;
 	top: -30px;
+	display: none;
 }
-
-
-
 
 /****THANK YOU****/
 
@@ -606,6 +605,25 @@ main#principal .radioElige input[type="radio"] {
 	}
 	/***END PASOS****/
 	/***THANK YOU***/
+
+	main#principal .texto-gracias h2
+	{
+		margin-bottom:5.5rem;
+	}
+
+	.texto-gracias h2:after,
+	.general h2:after,
+	.general h1:after,
+	.texto-gracias h2:before,
+	.general h2:before,
+	.general h1:before
+	{
+		display: block;
+	}
+
+	.texto-thankyou {
+		margin-bottom:1rem;
+	}
 
 	/***THNAK YOU***/
 }
