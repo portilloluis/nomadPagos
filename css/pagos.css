@@ -48,6 +48,7 @@ html {
 main#principal input[type="text"],
 main#principal input[type="number"],
 main#principal input[type="email"],
+main#principal input[type="date"],
 main#principal select {
 	border: 1px solid #C59614;
 	padding: .3rem .5rem;
@@ -74,9 +75,27 @@ main#principal input[type="submit"] {
 	transition: all .5s ease;
 }
 
+main#principal button.botonAzul {
+	background: #313035;
+	border: none;
+	font-weight: bold;
+	font-size: 1rem;
+	color: white;
+	margin: 1.4rem 0;
+	padding: .6rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: all .5s ease;
+}
+
 main#principal button.botonDorado:hover,
 main#principal input[type="submit"]:hover {
 	background: #A87E14
+}
+
+main#principal button.botonAzul:hover
+{
+	color:rgba(255,255,255,.6);
 }
 
 main#principal label {
@@ -122,8 +141,30 @@ main#principal hr {
 	margin: 1.4rem 0;
 }
 
+main#principal .encuentraCP
+{
+	 cursor: pointer;
+	 display: inline;
+	 font-size:.7rem;
+	 margin-top:.2rem;
+   margin-bottom:0;
+	 text-decoration: underline;
+
+}
+
+main#principal .encuentraCP:hover
+{
+	 opacity: .7;
+}
+
 main#principal .row.formElement div[class^="col-"] {
 	margin-bottom: 1rem;
+}
+
+main#principal .row.formElement div[class^="col-"].border
+{
+	border-bottom:1px solid #C59614;
+	padding-bottom: 1rem;
 }
 
 main#principal .info {
@@ -141,10 +182,6 @@ main#principal .info span {
 	font-weight: bold;
 	top: 0;
 	left: 35%;
-}
-
-main#principal hr {
-	margin: 1.4rem 0;
 }
 
 main#principal .row.formElement div[class^="col-"] {
@@ -176,6 +213,25 @@ main#principal .multipleLine select:last-child {
 
 main#principal .row.formElement div[class^="col-"].radioLine {
 	flex-direction: row;
+	align-items: baseline;
+}
+
+main#principal .fa.fa-calendar-o {
+	position: absolute;
+	left: 25px;
+	top: 35px;
+	color: #c59614;
+}
+
+main#principal input[type="date"] {
+	padding-left: 2rem;
+}
+
+main#principal p.smallh3
+{
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: none;
 }
 
 /*******END GENERALES*******/
@@ -432,13 +488,6 @@ main#principal .row.formElement div[class^="col-"].radioLine {
 	text-transform: uppercase;
 }
 
-#ModalBody .fa.fa-calendar-o {
-	position: absolute;
-	left: 25px;
-	top: 35px;
-	color: #c59614;
-}
-
 #ModalForm {
 	margin-bottom: 30px;
 }
@@ -461,10 +510,6 @@ select {
 main#principal .radioElige input[type="radio"] {
 	height: 1.4rem;
 	width: 1.4rem;
-}
-
-.ModalForm input[type="date"] {
-	padding-left: 2rem;
 }
 
 .radioElige {
@@ -521,12 +566,11 @@ main#principal .texto-gracias h2 {
 	text-align: center;
 }
 
-#hr-top {
-	margin-bottom: -10px;
-}
-
-#hr-down {
-	margin-top: 0px;
+#confirmacion
+{
+	border-bottom: 2px solid #313035;
+	border-top:2px solid #313035;
+	text-transform: uppercase;
 }
 
 #boton-fb {
@@ -581,6 +625,14 @@ main#principal .texto-gracias h2 {
 
 @media screen and (min-width:768px) {
 	/*******GENERALES*******/
+
+	main#principal .row.formElement div[class^="col-"].border
+	{
+		border-bottom:none;
+		border-right:1px solid #C59614;
+		padding-bottom:0;
+	}
+
 	html {
 		font-size: 18px;
 	}
@@ -589,15 +641,21 @@ main#principal .texto-gracias h2 {
 		width: 25%;
 		float: right;
 	}
-	main#principal button.botonDorado,
-	main#principal input[type="submit"] {
-		width: 25%;
+
+
+	main#principal button.botonDorado.completo,
+	main#principal button.botonAzul.completo,
+	main#principal input[type="submit"].completo
+	{
+		width: 100%;
 		float: right;
 	}
-	main#principal button.botonDorado.completo,
-	main#principal input[type="submit"].completo {
-		width: 100%;
+
+	main#principal button.botonAzul.completo
+	{
+		width: 70%;
 	}
+
 	/*******END - GENERALES*******/
 	/***PASOS****/
 	#pasos {
