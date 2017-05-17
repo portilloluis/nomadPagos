@@ -25,7 +25,7 @@
     <!--/ESTILO GENERAL PARA ESTA SECCIÓN DE PAGOS/-->
 
     <link rel="stylesheet" href="css/pagos.css" >
-    <title>Nomad Republic - Pagos</title>
+    <title>Nomad Republic - Reserva</title>
 </head>
 <body>
     <div class="header hidden-xs">
@@ -227,7 +227,7 @@
                     	  <div class="col-md-4 border">
                     	  	<label for="cpReserva">México</label>
 													<input type="text" placeholder="C.P." name="cpReserva" id="cpReserva"/>
-                   	  		<p class="encuentraCP">Encuentra tu C.P.</p>
+                   	  		<p class="greySmall encuentraCP">Encuentra tu C.P.</p>
                     	  </div>
                     	  <div class="col-md-4">
                     	  	 <label for="otrosPaisesReserva">Otros paises</label>
@@ -245,26 +245,33 @@
 
                     <div class="row formElement">
                     	  <div class="col-xs-12 radioLine">
-                             <input type="radio" name="personaContacto">
+                             <input type="checkbox" name="personaContacto" id="checkContacto">
                              <label for="personaContacto">Soy la persona del contacto</label>
                         </div>
                     </div>
 
-                    <div class="row formElement">
-                    	  <div class="col-md-4 radioLine">
-                             <input type="radio" name="personaContactoReserva">
-                             <label for="personaContactoReserva">WhatsApp</label>
-                        </div>
-                        <div class="col-md-4 radioLine">
-                             <input type="radio" name="personaContactoReserva">
-                             <label for="personaContactoReserva">Llamada</label>
-                        </div>
-                        <div class="col-md-4 radioLine">
-                             <input type="radio" name="personaContactoReserva">
-                             <label for="personaContactoReserva">Correo</label>
-                        </div>
-                    </div>
+                 	  <div id="formaDeContacto">
+											<div class="row formElement">
+												<div class="col-xs-12">
+													<p class="greySmall">¿Cómo te gustaría que te contactáramos</p>
+												</div>
+											</div>
 
+											<div class="row formElement">
+													<div class="col-md-4 radioLine">
+															 <input type="radio" name="personaContactoReserva">
+															 <label for="personaContactoReserva">WhatsApp</label>
+													</div>
+													<div class="col-md-4 radioLine">
+															 <input type="radio" name="personaContactoReserva">
+															 <label for="personaContactoReserva">Llamada</label>
+													</div>
+													<div class="col-md-4 radioLine">
+															 <input type="radio" name="personaContactoReserva">
+															 <label for="personaContactoReserva">Correo</label>
+													</div>
+											</div>
+										</div>
                     <hr>
                     <div class="row">
 												<div class="col-xs-12">

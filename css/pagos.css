@@ -141,18 +141,32 @@ main#principal hr {
 	margin: 1.4rem 0;
 }
 
-main#principal .encuentraCP
+main#principal .marginBottom
+{
+	margin-bottom:.8rem;
+}
+
+main#principal #formaDeContacto,
+main#principal #textoMontoDePago
+{
+	display: none;
+}
+
+main#principal .greySmall
 {
 	 cursor: pointer;
 	 display: inline;
 	 font-size:.7rem;
 	 margin-top:.2rem;
    margin-bottom:0;
-	 text-decoration: underline;
-
 }
 
-main#principal .encuentraCP:hover
+main#principal .greySmall.encuentraCP
+{
+	text-decoration: underline;
+}
+
+main#principal .greySmall.encuentraCP:hover
 {
 	 opacity: .7;
 }
